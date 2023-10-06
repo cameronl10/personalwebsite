@@ -30,7 +30,8 @@ const Intro = () =>{
                     strings: ["Hi, welcome to my website! I'm Cameron Lee, a student developer in Vancouver, Canada."],
                     autoStart: true,
                     loop: 1,
-                    pauseFor: 999999999
+                    pauseFor: 999999999,
+                    delay: 85
                 }}
                 />
             </div>

@@ -2,8 +2,8 @@
 
 const Experience = () =>{
     return(
-        <div className="" id="experiencetitle">
-        <h1>Experience</h1>
+        <div className="  m-32 flex flex-col" id="experiencetitle">
+        <h1 className=" text-center text-4xl font-bold">Experience</h1>
         </div>
     )
 }

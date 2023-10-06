@@ -13,6 +13,7 @@ function App() {
     <>
       <Intro/>
       <Bio/>
+      <Experience/>
       </>
   );
 }
