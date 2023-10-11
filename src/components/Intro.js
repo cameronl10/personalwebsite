@@ -27,11 +27,11 @@ const Intro = () =>{
             <div className="text-left max-w-6xl font-light tracking-wider leading-relaxed">
                 <Typewriter 
                 options={{
-                    strings: ["Hi, welcome to my website! I'm Cameron Lee, a student developer in Vancouver, Canada."],
+                    strings: ["Hi, welcome to my website! I'm Cameron Lee, a computer science student at UBC in Vancouver, Canada."],
                     autoStart: true,
                     loop: 1,
                     pauseFor: 999999999,
-                    delay: 85
+                    delay: 65
                 }}
                 />
             </div>
