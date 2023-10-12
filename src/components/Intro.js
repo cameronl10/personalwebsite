@@ -8,7 +8,7 @@ const Navbar = () =>{
           <h3 className="text-xl mb-4 md:mb-0 ">Cameron Lee</h3>
           <div className="space-x-4 flex flex-row flex-nowrap pr-10">
             <a href="#experiencetitle"> <h3 className="text-xl">Experience</h3></a>
-            <h3 className="text-xl">Projects</h3>
+            <a href="#projecttitle"><h3 className="text-xl">Projects</h3></a>
             <h3 className="text-xl">Contact</h3>
             <h3 className="text-xl">Resume</h3>
           </div>
