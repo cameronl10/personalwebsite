@@ -1,16 +1,16 @@
 import Typewriter from 'typewriter-effect'
-
+import resume from './utilities/cameronleesresume (1).pdf'
 
 const Navbar = () =>{
     return (
         <nav className="bg-white font-light">
         <div className=" w-3/5 mx-auto flex flex-col md:flex-row justify-between items-center p-3">
-          <h3 className="text-xl mb-4 md:mb-0 ">Cameron Lee</h3>
+          <h3 className="text-xl     mb-4 md:mb-0 ">Cameron Lee</h3>
           <div className="space-x-4 flex flex-row flex-nowrap pr-10">
-            <a href="#experiencetitle"> <h3 className="text-xl">Experience</h3></a>
-            <a href="#projecttitle"><h3 className="text-xl">Projects</h3></a>
-            <h3 className="text-xl">Contact</h3>
-            <h3 className="text-xl">Resume</h3>
+            <a href="#experiencetitle"> <h3 className=" hover:text-blue-400 text-xl">Experience</h3></a>
+            <a href="#projecttitle"><h3 className=" hover:text-blue-400 text-xl">Projects</h3></a>
+            <a href="#footertitle"><h3 className=" hover:text-blue-400  text-xl">Contact</h3></a>
+            <a href={resume}><h3 className=" hover:text-blue-400 text-xl">Resume</h3></a>
           </div>
         </div>
       </nav>
@@ -20,7 +20,7 @@ const Navbar = () =>{
 const Intro = () =>{
     return(
         <>
-        <div className="  bg-blue-50 flex flex-col overflow-y-auto pt-6">
+        <div className="  bg-blue-50 flex flex-col overflow-y-auto pt-6" id="introtitle">
             <Navbar/>
             </div>
             <div className=" mt-5 flex-grow flex justify-center items-center text-4xl">

@@ -15,6 +15,7 @@ function App() {
       <Bio/>
       <Experience/>
       <Project/>
+      <Footer/>
       </>
   );
 }

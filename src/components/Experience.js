@@ -20,7 +20,6 @@ const Card = (props) => {
         <div className="w-full md:w-1/4 p-4 flex items-center">
           <img
             src={props.image}
-            alt="Your Image"
             className="h-auto md:h-full object-none"
           />
         </div>
@@ -55,9 +54,9 @@ const Card = (props) => {
 const Experience = () =>{
     return(
         <div>
-        <h1 className=" m-20 text-center text-4xl font-bold">Experience</h1>
+        <h1 className=" m-20 text-center text-4xl font-bold" id="experiencetitle">Experience</h1>
 
-        <div className=" bg-blue-50 items-center justify-center flex flex-col" id="experiencetitle">
+        <div className=" bg-blue-50 items-center justify-center flex flex-col">
         <Card
         image={ACDSystem}
         link="https://www.acdsee.com/en/index/"
@@ -67,11 +66,7 @@ const Experience = () =>{
         term="June - August 2021"
         skills={['Test Automation','Quality Assurance Analysis','Test Analysis','SDLC']}
         description="ACD Systems is an independent digital image editing and management company with offices in the United States and Canada. The company was founded in 1994 in Texas by Doug Vandekerkhove. Its products include ACDSee photo editing and management software."
-        paragraph="• Developed end-to-end automated Python test cases that would verify user flows were at the correct state.
-        • Gathered requirements for comprehensive test cases to ensure UI components were working end-to-end.
-        • Tested a variety of UI components on different operating systems and browsers to ensure compatibility.
-        • Validated payment services using mock payment credentials to ensure that orders were able to be placed.
-        • Collaborated with web and software developers on photo editing software to ensure quality standards were met."
+        paragraph="Worked as a QA Analyst mainly focused on web testing. Worked with web developers to  test, refine, and precisely implement the goals outlined by testing guidelines. Created automated Python test cases to verify user flows and gathered requirements for comprehensive testing of UI components across different operating systems and browsers to ensure compatibility. Additionally, I validated payment services using mock payment credentials and collaborated with developers to maintain quality standards for photo editing software. "
         />
         <Card
         image={SUBCIcon}
@@ -81,7 +76,7 @@ const Experience = () =>{
         term="September 2024 - Present"
         description="SUBC, UBC’s Submarine Design Team, is comprised mostly of engineering undergraduate students from a variety of different departments including Mechanical Engineering, Civil Engineering and Engineering Physics. As a team we design, build, test and race a one person human-powered submarine in competitions in England and the United States"
         caption="Software Developer"
-        paragraph="Implementing computer vision and Data acquisition system into electrical system of submarine for sensors and orientaion data through raspberry pi and microchips "
+        paragraph="Joined the Electrical subteam in the computer vision and data acquisition branch. Current goals are to setup computer vision software to stream video to pilot, display data accquired through microchips and sensors. Future plans are to implement course correction and automated steering algorithims."
         skills={['Computer Vision','Python','OpenCV','DAQ','Raspberry Pi']}
         />
                 <Card
@@ -92,10 +87,7 @@ const Experience = () =>{
         location="Victoria BC"
         term="July - August 2019"
         description="St. Michaels University School (abbreviated SMUS) is an independent day and boarding school in the municipality of Saanich, the largest and most populous municipality in the Capital Regional District and on Vancouver Island. "
-        paragraph="• Engaged with students from Japan to help them in their English within their classes and extracurricular activities.
-        • Communicated with managers to set up campus events and prepare lesson plans.
-        • Resolved conflicts between students and teachers through mediating and providing solutions to mitigate future
-        conflicts.
+        paragraph="Worked as a student ambassador with exchange students from Japan for several weeks. I supported their English learning in the classroom and in extracurricular activites. I collaborated with coworkers and supervisors to organize events and develop lesson plans.
         "
         skills={['Collaborative Leadership','Communication','Conflict Resolution','Interpersonal Skills']}
         />
