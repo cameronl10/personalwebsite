@@ -5,6 +5,7 @@ import FIRST_LOGO from './utilities/images/first-tech-challenge-vector-logo.svg'
 import BATTLESNAKE_LOGO from './utilities/images/battlesnake-logo-nav-2022-light.svg'
 import TIME2EAT from './utilities/images/Time.17a28511486c08fb8fbd (1).svg'
 import CL from './utilities/images/CL2.svg'
+import CONSTELLATION from './utilities/images/872996-200.svg'
 const Skills = (props) => {
   const skillsList = props.skills.map((skill, index) => (
     <div key={index} className="bg-blue-200 text-blue-700  text-center rounded-full  h-10  p-2 m-1">
@@ -173,6 +174,34 @@ const Project = () => {
             githubLink:"https://github.com/cameronl10/battlesnake-python"
           },
           {
+            image: CONSTELLATION,
+            link:"https://github.com/cameronl10/ConstellationGame",
+            title: "Constellation Game",
+            caption:"CPSC 210 Project",
+            location: "Vancouver BC",
+            term:"Feb 2023",
+            paragraph:"A Java constellation trivia/learning game! Created for CPSC 210 at UBC.",
+            hasGitHub: true,
+            skills:['Java','JUnit','JSwing','json'],
+            githubLink:"https://github.com/cameronl10/ConstellationGame"
+          
+          },
+          {
+            image: CL,
+            link:"#introtitle",
+            title: "This website!",
+            caption:"Personal Portfolio",
+            location: "Vancouver BC",
+            term:"October 2023",
+            paragraph:"The website you are currently on! A responsive website built in ReactJS and Tailwind CSS.",
+            hasGitHub: true,
+            hasOther: true,
+            otherLink: "#introtitle",
+            skills:['React','Tailwind CSS','Javascript','HTML5'],
+            githubLink:"https://github.com/cameronl10/personalwebsite"
+          
+          },
+          {
             image: TIME2EAT,
             link: "https://eriklsy.github.io/nwHacks2023/",
             title: "Time2Eat",
@@ -187,21 +216,6 @@ const Project = () => {
             skills:['React','Google Maps API', 'Google Places API','Javascript','ExpressJS','Node.js'],
             githubLink:"https://github.com/eriklsy/nwHacks2023"
           },
-          {
-            image: CL,
-            link:"#introtitle",
-            title: "This website!",
-            caption:"Personal Portfolio",
-            location: "Vancouver BC",
-            term:"October 2024",
-            paragraph:"The website you are currently on! A responsive website built in ReactJS and Tailwind CSS.",
-            hasGitHub: true,
-            hasOther: true,
-            otherLink: "#introtitle",
-            skills:['React','Tailwind CSS','Javascript','HTML5'],
-            githubLink:"https://github.com/cameronl10/personalwebsite"
-          
-          }
     ]
     return (
         <div className=" bg-white flex flex-col items-center justify-center">
