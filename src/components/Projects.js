@@ -8,7 +8,7 @@ import CL from './utilities/images/CL2.svg'
 import CONSTELLATION from './utilities/images/872996-200.svg'
 const Skills = (props) => {
   const skillsList = props.skills.map((skill, index) => (
-    <div key={index} className="bg-blue-200 text-blue-700  text-center rounded-full  h-10  p-2 m-1">
+    <div key={index} className="bg-blue-200 text-blue-700  text-center rounded-full  h-10  p-2 m-1 truncate">
       {skill}
     </div>
   ));
