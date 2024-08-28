@@ -33,7 +33,7 @@ const Bio = () => {
           <h1 className="pt-20 font-bold text-4xl">About me!</h1>
           <div className="max-w-screen-md p-4">
             <p className="text-center font-light tracking-wide leading-loose">
-              Hi! I'm a UBC computer science originally from Victoria. I have a passion for software engineering and design. I have technical experience as a QA analyst and personal experience in OOP, web development, computer vision and robotics. Outside of the tech field I like to listen and play music, play sports with my friends and read science fiction and philosophy. Feel free to contact me or view my <a className=" text-blue-500" href={resume}>resume!</a>
+              Hi! I'm a UBC computer science originally from Victoria. I have a passion for software engineering and design. I have technical experience as a Software Engineer and  QA analyst and personal experience in OOP, web development, computer vision and robotics. Outside of the tech field I like to listen and play music, play sports with my friends and read science fiction and philosophy. Feel free to contact me or view my <a className=" text-blue-500" href={resume}>resume!</a>
             </p>
           </div>
         </div>

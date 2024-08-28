@@ -1,6 +1,7 @@
 import ACDSystem from './utilities/images/ACD_Systems_Logo.svg'
 import SMUSIcon from './utilities/images/icon-smus.svg'
 import SUBCIcon from './utilities/images/1598495774964.svg'
+import SAPIcon from './utilities/images/SAP_2011_logo.svg'
 const Skills = (props) => {
   const skillsList = props.skills.map((skill, index) => (
     <div key={index} className="bg-blue-200 text-blue-700  text-center rounded-full  h-10  p-2 m-1">
@@ -57,6 +58,19 @@ const Experience = () =>{
         <h1 className=" m-20 text-center text-4xl font-bold" id="experiencetitle">Experience</h1>
 
         <div className=" bg-blue-50 items-center justify-center flex flex-col">
+
+        <Card
+        image={SAPIcon}
+        link="https://www.sap.com/"
+        title="SAP"
+        caption="Software Engineering Intern"
+        location="Vancouver  BC"
+        term="January - August 2024"
+        skills={['Jenkins','Docker','JavaScript','Java','SQL','CI/CD']}
+        description="SAP develops enterprise software to manage business operations and customer relations. The company is the world's leading enterprise resource planning software vendor."
+        paragraph="Worked as a Software Engineering Intern in the HANA Analytics and Database team. Implemented, tested and shipped features that would affect customers worldwide. During my time at SAP, I was able to work on many different topics ranging from fullstack software engineering to infrastructure and deployments. My main role was to maintain and develop the file repository system in SAP's Analytic Cloud platform. I developed features, automated testing, bug fixes and infrastructure development in both customer facing components and database components."
+        />
+
         <Card
         image={ACDSystem}
         link="https://www.acdsee.com/en/index/"

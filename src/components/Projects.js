@@ -6,6 +6,7 @@ import BATTLESNAKE_LOGO from './utilities/images/battlesnake-logo-nav-2022-light
 import TIME2EAT from './utilities/images/Time.17a28511486c08fb8fbd (1).svg'
 import CL from './utilities/images/CL2.svg'
 import CONSTELLATION from './utilities/images/872996-200.svg'
+import BOOKTRAIL_LOGO from './utilities/images/booktraillogo.png'
 const Skills = (props) => {
   const skillsList = props.skills.map((skill, index) => (
     <div key={index} className="bg-blue-200 text-blue-700  text-center rounded-full  h-10  p-2 m-1 truncate">
@@ -145,6 +146,21 @@ const Carousel = (props) => {
 
 const Project = () => {
     const ProjectData = [
+        {
+            image: BOOKTRAIL_LOGO,
+            link: "https://www.booktrail.tech/",
+            title: "Booktrail",
+            caption: "nwHacks 2024",
+            location: "Vancouver BC",
+            term: "January 2024",
+            description: "Western Canada's Largest 24 hour hackathon",
+            paragraph: "BookTrail is a library assistant designed to elevate the experience for every single reader. Currently, our app features a solution, that allows a reader to search for a book, get an overview, and find the path directly to the shelf it's located. Secured 1st place implementation of MappedinSDK and runner-up of the wildcard track",
+            hasGitHub: true,
+            hasOther: true,
+            otherLink: 'https://www.booktrail.tech/',
+            skills: ['Next.js','TypeScript','Tailwind','Mappedin SDK','MongoDB','Auth0'],
+            githubLink: "https://github.com/cameronl10/NWHACKS2024"
+        },
         {
             image: FIRST_LOGO,
             link: "https://www.firstinspires.org/robotics/ftc",

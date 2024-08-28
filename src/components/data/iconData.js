@@ -7,11 +7,15 @@ export const iconData = [
     'CSS',
     'HTML',
     'JavaScript',
+    'TypeScript',
     'MongoDB',
+    'GraphQL',
+    'Postgres',
     'ExpressJS',
     'React',
     'NodeJS',
     'Git',
     'R',
+    'Selenium',
     'OpenCV'
 ]

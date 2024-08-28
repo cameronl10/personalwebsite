@@ -13,7 +13,10 @@ import opencv from './opencv-icon.svg';
 import python from './python-svgrepo-com.svg';
 import r from './r-lang.svg';
 import react from './reactjs-svgrepo-com.svg';
-
+import postgres from './postgresql-logo-svgrepo-com.svg'
+import graphql from './graphql-icon.svg'
+import typescript from './typescript.svg'
+import selenium from './selenium-svgrepo-com.svg'
 export const iconKey = (key) => {
     const lowerKey = key.toLowerCase();
     switch (lowerKey) {
@@ -47,6 +50,14 @@ export const iconKey = (key) => {
             return r;
         case 'react':
             return react;
+        case 'postgres':
+            return postgres
+        case 'graphql':
+            return graphql
+        case 'typescript':
+            return typescript
+        case 'selenium':
+            return selenium
         default:
            break;
     }
