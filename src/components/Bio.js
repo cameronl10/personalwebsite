@@ -1,6 +1,6 @@
 import { iconData } from "./data/iconData";
 import { iconKey } from "./utilities/icons/IconKeys";
-import resume from './utilities/cameronleesresume (1).pdf'
+import resume from './utilities/cameronleesresume2024 (10).pdf'
 
 const Skillcard = () =>{
   return(
