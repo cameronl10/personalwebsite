@@ -22,6 +22,7 @@ const Card = (props) => {
           <img
             src={props.image}
             className="h-auto md:h-full object-none"
+            alt="Image"
           />
         </div>
         <div className="w-full md:w-3/4 p-4">
