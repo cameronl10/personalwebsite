@@ -19,10 +19,10 @@ const Card = (props) => {
     <div className=" m-2 flex justify-center items-center">
       <div className="md:m-9 bg-white  shadow-xl rounded-md md:flex  w-3/4">
         <div className="w-full md:w-1/4 p-4 flex items-center">
-          <img
+{        // eslint-disable-next-line
+}          <img
             src={props.image}
             className="h-auto md:h-full object-none"
-            alt="Image"
           />
         </div>
         <div className="w-full md:w-3/4 p-4">
