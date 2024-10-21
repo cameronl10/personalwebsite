@@ -2,6 +2,7 @@ import ACDSystem from './utilities/images/ACD_Systems_Logo.svg'
 import SMUSIcon from './utilities/images/icon-smus.svg'
 import SUBCIcon from './utilities/images/1598495774964.svg'
 import SAPIcon from './utilities/images/SAP_2011_logo.svg'
+import AGROIcon from './utilities/images/agrobots.svg'
 const Skills = (props) => {
   const skillsList = props.skills.map((skill, index) => (
     <div key={index} className="bg-blue-200 text-blue-700  text-center rounded-full  h-10  p-2 m-1">
@@ -83,12 +84,24 @@ const Experience = () =>{
         description="ACD Systems is an independent digital image editing and management company with offices in the United States and Canada. The company was founded in 1994 in Texas by Doug Vandekerkhove. Its products include ACDSee photo editing and management software."
         paragraph="Worked as a QA Analyst mainly focused on web testing. Worked with web developers to  test, refine, and precisely implement the goals outlined by testing guidelines. Created automated Python test cases to verify user flows and gathered requirements for comprehensive testing of UI components across different operating systems and browsers to ensure compatibility. Additionally, I validated payment services using mock payment credentials and collaborated with developers to maintain quality standards for photo editing software. "
         />
+
+        <Card
+        image={AGROIcon}
+        link="https://ubcagrobot.com/#/"
+        title="UBC Agrobots Engineering Design Team"
+        location="Vancouver BC"
+        term="September 2024 - Present"
+        description="Agrobot is an autonomous robot utilizing AI and machine learning for precise intra-row weeding and data collection. It identifies and eliminates weeds without harming crops, reducing the need for chemical pesticides. Additionally, the robot collects data on crop health to help farmers make better, more informed decisions."
+        caption="Machine Learning Engineer"
+        paragraph="Joined the Applied AI subteam in the Maize detection branch. Current goals are to finetune a YOLOv11 model to send data to the extermination function of the robot to be used in competition this year."
+        skills={['PyTorch', 'Neural networks', 'Data processing']}
+        />
         <Card
         image={SUBCIcon}
         link="https://subc.ca"
         title="UBC SUBC Engineering Design Team"
         location="Vancouver BC"
-        term="September 2024 - Present"
+        term="September 2023 - June 2024"
         description="SUBC, UBC’s Submarine Design Team, is comprised mostly of engineering undergraduate students from a variety of different departments including Mechanical Engineering, Civil Engineering and Engineering Physics. As a team we design, build, test and race a one person human-powered submarine in competitions in England and the United States"
         caption="Software Developer"
         paragraph="Joined the Electrical subteam in the computer vision and data acquisition branch. Current goals are to setup computer vision software to stream video to pilot, display data accquired through microchips and sensors. Future plans are to implement course correction and automated steering algorithims."

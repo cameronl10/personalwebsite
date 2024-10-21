@@ -1,5 +1,5 @@
 import Typewriter from 'typewriter-effect'
-import resume from './utilities/cameronleesresume2024 (10).pdf'
+import resume from './utilities/cameronleesresume2024 (11).pdf'
 
 const Navbar = () =>{
     return (

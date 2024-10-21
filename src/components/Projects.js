@@ -7,6 +7,7 @@ import TIME2EAT from './utilities/images/Time.17a28511486c08fb8fbd (1).svg'
 import CL from './utilities/images/CL2.svg'
 import CONSTELLATION from './utilities/images/872996-200.svg'
 import BOOKTRAIL_LOGO from './utilities/images/booktraillogo.png'
+import PLANTPAL_LOGO from './utilities/images/plantpal.svg'
 const Skills = (props) => {
   const skillsList = props.skills.map((skill, index) => (
     <div key={index} className="bg-blue-200 text-blue-700  text-center rounded-full  h-10  p-2 m-1 truncate">
@@ -94,58 +95,81 @@ const Card = (props) => {
     );
 };
 const Carousel = (props) => {
-    const [curr, setCurr] = useState(0);
-  
-    const prev = () =>
-      setCurr((curr) => (curr === 0 ? props.slides.length - 1 : curr - 1));
-    const next = () =>
-      setCurr((curr) => (curr === props.slides.length - 1 ? 0 : curr + 1));
-  
-    const goToSlide = (index) => {
-      setCurr(index);
-    };
-  
-    return (
-<div className="bg-blue-50 md:m-20 overflow-hidden relative w-full p-4 md:p-10">
+  const [curr, setCurr] = useState(0);
+
+  const prev = () =>
+    setCurr((curr) => (curr === 0 ? props.slides.length - 1 : curr - 1));
+  const next = () =>
+    setCurr((curr) => (curr === props.slides.length - 1 ? 0 : curr + 1));
+
+  const goToSlide = (index) => {
+    setCurr(index);
+  };
+
+  return (
+    <div className="relative w-full p-4 md:p-10" style={{ height: '500px' }}> {/* Set a consistent height */}
+      <div className="relative h-full">
         <Card {...props.slides[curr]} />
-        <div className="absolute inset-0 flex items-center justify-between p-4">
-          <button
-            className="hidden md:block p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white ml-4"
-            onClick={prev}
-          >
-            <ChevronLeft size={40} />
-          </button>
-          <button
-            className="hidden md:block p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white mr-4"
-            onClick={next}
-          >
-            <ChevronRight size={40} />
-          </button>
-        </div>
-  
-        <div className="absolute bottom-4 right-0 left-0">
-          <div className="flex items-center justify-center gap-2">
-            {props.slides.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => goToSlide(i)}
-                className={`
-                  transition-all w-3 h-3 bg-slate-500 rounded-full
-                  ${curr === i ? "p-2" : "bg-opacity-50"}
-                `}
-              />
-            ))}
-          </div>
+
+        {/* Left and right buttons (fixed) */}
+        <button
+          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white absolute top-1/2 transform -translate-y-1/2 left-4"
+          style={{ zIndex: 10 }} // Ensure buttons are always on top
+          onClick={prev}
+        >
+          <ChevronLeft size={40} />
+        </button>
+        <button
+          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white absolute top-1/2 transform -translate-y-1/2 right-4"
+          style={{ zIndex: 10 }} // Ensure buttons are always on top
+          onClick={next}
+        >
+          <ChevronRight size={40} />
+        </button>
+      </div>
+
+      {/* Slide indicators */}
+      <div className="absolute bottom-0 right-0 left-0">
+        <div className="flex items-center justify-center gap-2">
+          {props.slides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => goToSlide(i)}
+              className={`
+                transition-all w-3 h-3 bg-slate-500 rounded-full
+                ${curr === i ? "p-2" : "bg-opacity-50"}
+              `}
+            />
+          ))}
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
+
   
   
   
 
 const Project = () => {
     const ProjectData = [
+
+        {
+            image: PLANTPAL_LOGO,
+            link: "https://www.booktrail.tech/",
+            title: "PlantPals",
+            caption: "StormHacks 2024",
+            location: "Vancouver BC",
+            term: "October 2024",
+            description: "SFU Surge flagship hackathon",
+            paragraph: "PlantPals is an IoT system that helps beginners monitor and care for their plants effortlessly. It connects an ESP32 chip, which gathers sensor data direct from the plant (like soil moisture and light levels), and sends this information to a central Raspberry Pi server running Flask and connected to a temperature sensor. Through the PlantPals app, users can take a picture of their plant to identify it and load personalized care data, give their plant a name and “birthday”, and monitor their plant’s health levels in conjunction with a plant information display when the app is used alongside our PlantPals device",
+            hasGitHub: true,
+            hasOther: true,
+            otherLink: 'https://devpost.com/software/plantpals-zf89td',
+            skills: ['React Native','Expo','Raspberry PI','ESP32','Flask','Python','Javascript'],
+            githubLink: "https://github.com/TheIceCreamBoss/PlantPals"
+        },
+
         {
             image: BOOKTRAIL_LOGO,
             link: "https://www.booktrail.tech/",
