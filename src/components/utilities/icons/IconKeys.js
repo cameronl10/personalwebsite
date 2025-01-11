@@ -17,6 +17,7 @@ import postgres from './postgresql-logo-svgrepo-com.svg'
 import graphql from './graphql-icon.svg'
 import typescript from './typescript.svg'
 import selenium from './selenium-svgrepo-com.svg'
+import csharp from './Logo_C_sharp.svg'
 export const iconKey = (key) => {
     const lowerKey = key.toLowerCase();
     switch (lowerKey) {
@@ -58,6 +59,8 @@ export const iconKey = (key) => {
             return typescript
         case 'selenium':
             return selenium
+        case 'c#':
+            return csharp
         default:
            break;
     }

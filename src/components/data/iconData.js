@@ -2,6 +2,7 @@ export const iconData = [
     'Assembly',
     'C',
     'C++',
+    'C#',
     'Java',
     'Python',
     'CSS',

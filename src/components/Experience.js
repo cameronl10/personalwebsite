@@ -3,6 +3,7 @@ import SMUSIcon from './utilities/images/icon-smus.svg'
 import SUBCIcon from './utilities/images/1598495774964.svg'
 import SAPIcon from './utilities/images/SAP_2011_logo.svg'
 import AGROIcon from './utilities/images/agrobots.svg'
+import TESLAicon from './utilities/images/Tesla_Motors.svg'
 const Skills = (props) => {
   const skillsList = props.skills.map((skill, index) => (
     <div key={index} className="bg-blue-200 text-blue-700  text-center rounded-full  h-10  p-2 m-1">
@@ -60,7 +61,17 @@ const Experience = () =>{
         <h1 className=" m-20 text-center text-4xl font-bold" id="experiencetitle">Experience</h1>
 
         <div className=" bg-blue-50 items-center justify-center flex flex-col">
-
+        <Card
+        image={TESLAicon}
+        link="https://www.tesla.com/"
+        title="Tesla"
+        caption="Software Engineering Intern"
+        location="Palo Alto, CA"
+        term="January - May 2025"
+        skills={['C#','Automation','ABBYY']}
+        description="Tesla, Inc. is an American company that designs, manufactures, and sells electric vehicles, energy storage systems, and solar panels. Tesla's goal is to accelerate the world's transition to sustainable energy."
+        paragraph="Working as a Software Engineering Intern on the Finance Analytics and Automation team. I am currently developing an automated car registration bot that will take car registration forms and scan,process and upload the records into Tesla systems."
+        />
         <Card
         image={SAPIcon}
         link="https://www.sap.com/"
