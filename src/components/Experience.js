@@ -4,6 +4,7 @@ import SUBCIcon from './utilities/images/1598495774964.svg'
 import SAPIcon from './utilities/images/SAP_2011_logo.svg'
 import AGROIcon from './utilities/images/agrobots.svg'
 import TESLAicon from './utilities/images/Tesla_Motors.svg'
+import AmazonIcon from './utilities/images/Amazon_icon.svg'
 const Skills = (props) => {
   const skillsList = props.skills.map((skill, index) => (
     <div key={index} className="bg-blue-200 text-blue-700  text-center rounded-full  h-10  p-2 m-1">
@@ -62,6 +63,17 @@ const Experience = () =>{
 
         <div className=" bg-blue-50 items-center justify-center flex flex-col">
         <Card
+        image={AmazonIcon}
+        link="https://aws.amazon.com/"
+        title="Amazon"
+        caption="Software Engineering Intern"
+        location="Vancouver  BC"
+        term="May - August 2025"
+        skills={['Python', 'Java', 'AWS', 'AI Tooling']}
+        description="Amazon is an American multinational technology company engaged in e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence."
+        paragraph="During the summer of 2025, I worked at Amazon in Vancouver on the payments team. On this team I developed a framework for AI tooling that would take any generic user input and run it through an agentic AI workflow. Some use cases of this project was accounting validation across multiple files or UI QA validation of certain web elements through AI browser automation."
+        />
+        <Card
         image={TESLAicon}
         link="https://www.tesla.com/"
         title="Tesla"
@@ -70,7 +82,7 @@ const Experience = () =>{
         term="January - May 2025"
         skills={['C#','Automation','ABBYY']}
         description="Tesla, Inc. is an American company that designs, manufactures, and sells electric vehicles, energy storage systems, and solar panels. Tesla's goal is to accelerate the world's transition to sustainable energy."
-        paragraph="Working as a Software Engineering Intern on the Finance Analytics and Automation team. I am currently developing an automated car registration bot that will take car registration forms and scan,process and upload the records into Tesla systems."
+        paragraph="During the winter of 2025 in Palo Alto, I worked on the finance automation team, I built tools to automate everything from car registrations and insurance to tax documents and internal refactors. My main project was an end-to-end bot that processed fleets of cars by generating and managing certificates of origin. I also created a custom solution for Massachusetts that now handles over 2,000 car registrations every quarter."
         />
         <Card
         image={SAPIcon}
